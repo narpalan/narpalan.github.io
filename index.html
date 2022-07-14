@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Narpalan - Portfólio</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  body, html {
+    padding: 0px 0px 0px 0px;
+    background-color: #D8DBE2;
+    font-family: 'ibm_3270_semi-narrowmedium';
+    font-size: 11pt;
+    text-align: center;       
+  }
+
+  div.page_header {
+    height: 50px;
+    width: 100%;
+    border-bottom:1px solid #CD214F;
+    background-color: #fcfcfc;
+  } 
+
+  div.page_header img {
+    margin: 7px 0px 0px 0px;
+    max-width: 30%;
+    height: auto;         
+    
+  }
+  
+  div.row{
+    width: 100%;
+  }
+
+  div.header-logo {    
+    margin: 0px 0px 0px 40px;    
+  }
+  
+  div.header-menu{
+    margin: -35px 0px 0px 800px;
+    display: flex;
+  }
+
+  div.header-menu ul{    
+    display: flex;
+    list-style-type: none; 
+    margin-left: 50px;   
+    padding:5px;
+  }
+  div.header-menu a{    
+    text-decoration: none;
+    color: inherit;
+  }
+  div.header-menu li{
+    margin-right: 10px;
+    margin-left: 3px;
+  }  
+
+  div.table_of_contents {
+    clear: left;
+
+    min-width: 200px;
+
+    margin: 3px 3px 3px 3px;    
+
+    text-align: left;
+  }
+  div.section {
+    border: 1px solid #CD214F;
+  }
+  div.section1 {
+    border: 1px solid #CD214F;
+    border-top: 0px;
+  }
+  div.section-content {
+    text-align: justify;
+    margin: 10px 10px 10px 10px;        
+  }
+
+
+
+ 
+  @font-face {
+    font-family: 'ibm_3270_semi-narrowmedium';
+    src: url('./src/fonts/3270seminarrow-webfont.woff2') format('woff2'),
+         url('./src/fonts/3270seminarrow-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+</style>
+
+    <header>
+      <div class="page_header">
+        <nav>
+          <div class="row">
+            <div class="header-logo">
+              <img src="./src/img/header-logo.gif" alt="minha foto"/>
+            </div>
+            <div class="header-menu">
+              <ul>
+                <li><a href="#sobre">Sobre </a></li>
+                <li><a href="#skills">Skills</a> </li>
+                <li><a href="#interesses">Interesses</a></li>
+                <li><a href="#minha-foto">Foto</a></li>
+              </ul>              
+            </div> 
+
+          </div>
+        </nav> 
+      </div>
+    </header>
+  </head>
+  <body>
+    <div class="table_of_contents">  
+      <div class="section">
+        <h1 class="custom-h1" id="sobre">Sobre</h1>
+        <div class="section-content">
+          <div>
+            Olá! Bem vindo ao rascunho do meu portfólio. Sinta-se a vontade para navegar nos links que se encontram no lado superior direito dessa página.
+            <p>Meu nome é <b>Thiago Fumega Moreira Machado</b>. Sou brasileiro, mineiro de Contagem!</p>
+          </div>
+          <div >
+            <img src="./src/img/eu.jpg" style="width: 215px; height: 300;" id="minha-foto"/>
+          </div>
+        </div>
+        
+                
+      </div>
+      <div class="section1">
+        <h1 class="custom-h1" id="skills">Skills</h1>
+        <div class="section-content">
+          <ul style="margin-left: 15px;">
+            <li>Linux</li>
+            <li><b>Assembly</b></li>
+            <li>PHP </li>            
+            <li>NodeJS</li>
+            <li>TypeScript</li>
+            <li><b>Delphi</b> </li>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul> 
+        </div>
+      </div> 
+      <div class="section1">
+        <h1 class="custom-h1" id="interesses">Interesses</h1>
+        <div class="section-content">
+          <ul style="margin-left: 15px;">
+            <li><a href="https://www.mmo-champion.com/content/" target="_blank">MMO-Champion</a></li>
+            <li><a href="https://medium.com/@awlucattini_60867/getting-started-with-wsl2-c11826654776" target="_blank"><i>WSL2</i></a></li>
+            <li><a href="https://panelaterapia.com/" target="_blank">Culinária</a></li>                        
+          </ul>           
+        </div>
+      </div>
+    </div>
+      
+      
+  </body>   
