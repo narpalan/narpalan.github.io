@@ -75,6 +75,13 @@ div.section-content {
   margin: 10px 10px 10px 10px;        
 }
 
+div.section-content img{
+  border-radius: 100px;
+  height:175px;
+  width: 175px;
+  
+}
+
 
 
 
