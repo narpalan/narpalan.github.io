@@ -1,0 +1,88 @@
+* {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+body, html {
+  padding: 0px 0px 0px 0px;
+  background-color: #D8DBE2;
+  font-family: 'ibm_3270_semi-narrowmedium';
+  font-size: 11pt;
+  text-align: center;       
+}
+
+div.page_header {
+  height: 50px;
+  width: 100%;
+  border-bottom:1px solid #CD214F;
+  background-color: #fcfcfc;
+} 
+
+div.page_header img {
+  margin: 7px 0px 0px 0px;
+  max-width: 30%;
+  height: auto;         
+  
+}
+
+div.row{
+  width: 100%;
+}
+
+div.header-logo {    
+  margin: 0px 0px 0px 40px;    
+}
+
+div.header-menu{
+  margin: -35px 0px 0px 800px;
+  display: flex;
+}
+
+div.header-menu ul{    
+  display: flex;
+  list-style-type: none; 
+  margin-left: 50px;   
+  padding:5px;
+}
+div.header-menu a{    
+  text-decoration: none;
+  color: inherit;
+}
+div.header-menu li{
+  margin-right: 10px;
+  margin-left: 3px;
+}  
+
+div.table_of_contents {
+  clear: left;
+
+  min-width: 200px;
+
+  margin: 3px 3px 3px 3px;    
+
+  text-align: left;
+}
+div.section {
+  
+  border: 1px solid #CD214F;
+
+}
+div.section1 {
+  border: 1px solid #CD214F;
+  border-top: 0px;
+}
+div.section-content {
+  text-align: justify;
+  margin: 10px 10px 10px 10px;        
+}
+
+
+
+
+@font-face {
+  font-family: 'ibm_3270_semi-narrowmedium';
+  src: url('../fonts/3270seminarrow-webfont.woff2') format('woff2'),
+       url('../fonts/3270seminarrow-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
