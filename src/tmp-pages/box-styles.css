@@ -1,0 +1,13 @@
+h1, p {
+  background-color: #DDE0E3;    /* Light gray */
+ 
+}
+
+h1 {
+  padding: 25px;
+  border-bottom: 1px solid #5D6063;
+}
+
+em, strong {
+  background-color: #B2D6FF;    /* Light blue */  
+}
