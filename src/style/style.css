@@ -19,8 +19,7 @@ div.page_header nav {
 } 
 
 div.page_header img {
-  margin: 0;
-  padding: 1px 0 0 5px;
+  padding: 7px 0 0 5px;
   max-width: 75%;
   height: auto;
   display: block;
@@ -42,7 +41,7 @@ div.header-logo {
 
 div.header-menu{
   max-width: 33%;
-  padding: 0px 0px 0px 0px;
+  padding: 15px 0px 0px 0px;
   float: right;
 }
 
@@ -119,6 +118,8 @@ div.section-content {
 
 div.section-content #text-content{
   padding: 125px 0 0 0;
+  text-align: justify;
+  max-width: 66%;
 }
 
 div.section-content img{
