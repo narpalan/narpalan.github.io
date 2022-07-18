@@ -13,7 +13,7 @@ body, html {
 div.page_header nav {
   height: 50px;
   width: 100%;
-  border-bottom:1px solid #CD214F;
+  border-bottom:1px solid #727171;
   background-color: #fcfcfc;
   display: inline-flex;
 } 
@@ -62,6 +62,7 @@ div.header-menu li{
 }  
 
 div.table_of_contents {
+  padding: 25px 0 0 0;
   border: 0px solid #000000;
   display: block;
 }
@@ -78,6 +79,7 @@ div.table_of_contents {
   font-size: 15px;
   transition: 0.4s;
   font-family: 'ibm_3270_semi-narrowmedium', monospace;
+  border-bottom: 1px solid #cc2255;
 }
 
 .active, .accordion:hover {
@@ -108,8 +110,11 @@ div.section .custom-h1{
 
 div.section-content {
   text-align: justify;
-  padding: 0 18px;
   display: inline-flex;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-out;
 }
 
 div.section-content #text-content{

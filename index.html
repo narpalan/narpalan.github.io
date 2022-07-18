@@ -34,7 +34,7 @@
 
 
   <div class="section">
-    <button class="accordion">Sobre</button>
+    <button class="accordion" id="sobre">Sobre</button>
     <div class="section-content">
       <div>
         <img src="./src/img/eu.jpg" alt="foto de thiago fumega" id="minha-foto-content"/>
@@ -49,7 +49,7 @@
 
 
   <div class="section">
-    <button class="accordion">Skills</button>
+    <button class="accordion" id="skills">Skills</button>
     <div class="section-content">
       <ul style="margin-left: 15px;">
         <li>Linux</li>
@@ -65,7 +65,7 @@
   </div>
 
   <div class="section">
-    <button class="accordion">Interesses</button>
+    <button class="accordion" id="interesses">Interesses</button>
     <div class="section-content">
       <ul style="margin-left: 15px;">
         <li><a href="https://www.mmo-champion.com/content/" target="_blank">MMO-Champion</a></li>
@@ -78,6 +78,23 @@
 
 </div>
 
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var section = this.nextElementSibling;
+      if (section.style.maxHeight) {
+        section.style.maxHeight = null;
+      } else {
+        section.style.maxHeight = section.scrollHeight + "px";
+      }
+    });
+  }
+</script>
 
 </body>
 </html>
