@@ -12,7 +12,7 @@ body, html {
 
 div.page_header nav {
   height: 50px;
-  width: 100%;
+  width: auto;
   border-bottom:1px solid #727171;
   background-color: #fcfcfc;
   display: inline-flex;
@@ -21,7 +21,6 @@ div.page_header nav {
 div.page_header img {
   padding: 7px 0 0 5px;
   max-width: 75%;
-  height: auto;
   display: block;
 }
 
@@ -87,33 +86,25 @@ div.table_of_contents {
 
 div.section {
 
-
     border-left: 0;
     border-radius: 3px;
     width: 100%;
     align-content: center;
     border-top: 0;
     text-align: justify;
-
-
     display: block;
 }
 div.section .custom-h1{
   text-align: center;
   border: 1px solid gray;
 }
-
-
-
-
-
 div.section-content {
   text-align: justify;
   display: inline-flex;
-  padding: 0 18px;
+  padding: 0px 18px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .3s ease-out;
+  transition: max-height .5s ease-out;
 }
 
 div.section-content #text-content{
@@ -122,12 +113,39 @@ div.section-content #text-content{
   max-width: 66%;
 }
 
-div.section-content img{
+div.section-content #minha-foto-content{
   border-radius: 100px;
   height:175px;
-  width: 175px;   
+  width: 175px;
   align-items: center;
-  margin: 60px;  
+  margin: 60px;
+}
+
+#ul-skills{
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0 0 0 100px;
+  margin-left: 5px;
+}
+
+#ul-skills li{
+  width: 110px;
+  height: 28px;
+  border: 1px solid #000000;
+  margin: 20px 5px 5px 5px;
+  padding: 5px 20px 5px 25px;
+  border-radius: 5px;
+
+}
+
+li.li-img{
+  width: 5px;
+  height: 5px;
+
+}
+
+div.destaque{
+  display: inline-flex;
 }
 
 
