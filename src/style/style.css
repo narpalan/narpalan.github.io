@@ -10,9 +10,13 @@ body, html {
   font-size: 11pt;
 }
 
+.page_header {
+  width: 100%;
+}
+
 div.page_header nav {
   height: 50px;
-  width: auto;
+  width: 100%;
   border-bottom:1px solid #727171;
   background-color: #fcfcfc;
   display: inline-flex;
