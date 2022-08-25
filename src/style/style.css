@@ -4,68 +4,84 @@
 }
 
 body, html {
-  padding: 0 0 0 0;
   background-color: #D8DBE2;
   font-family: 'ibm_3270_semi-narrowmedium', monospace;
   font-size: 11pt;
 }
 
-.page_header {
-  width: 100%;
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM 3270', serif;
+  height: 100%;
+  justify-content: space-between;
 }
 
+.page_header {
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fcfcfc;
+  border-bottom:1px solid #727171;
+  z-index: 12;
+  padding-left: 1em;
+}
+/*
 div.page_header nav {
   height: 50px;
+  position: fixed;
   width: 100%;
-  border-bottom:1px solid #727171;
-  background-color: #fcfcfc;
-  display: inline-flex;
-} 
 
+
+
+  padding-right: 5em;
+  display: flex;
+  justify-content: space-between;
+}
+*/
+
+/*
 div.page_header img {
   padding: 7px 0 0 5px;
   max-width: 75%;
   display: block;
 }
+*/
 
-
-div.row{
-  width: 100%;
-  height: 100%;
-  display: inline;
+.header-logo {
+  width: 15em;
+  height: 2em;
 }
 
-div.header-logo {
-  float: left;
-  max-width: 33%;
-  max-height: 100%;
-
+.header-container {
+  padding-right: 3em;
 }
 
-div.header-menu{
-  max-width: 33%;
-  padding: 15px 0px 0px 0px;
-  float: right;
-}
-
-div.header-menu ul{    
+div.header-container ul{
   display: flex;
-  list-style-type: none; 
-  margin-left: 50px;   
+  list-style-type: none;
   padding:5px;
 }
-div.header-menu a{    
+div.header-container a{
   text-decoration: none;
   color: inherit;
 }
-div.header-menu li{
-  margin-right: 10px;
+div.header-container li{
+  margin-right: 3px;
   margin-left: 3px;
-}  
+}
 
 div.table_of_contents {
+  position: absolute;
+  margin-top: 3em;
   padding: 25px 0 0 0;
-  border: 0px solid #000000;
+  border: 0 solid #000000;
   display: block;
 }
 
@@ -102,10 +118,22 @@ div.section .custom-h1{
   text-align: center;
   border: 1px solid gray;
 }
+
+div.content {
+  display: inline-flex;
+  max-width: 95%;
+  overflow: hidden;
+  transition: max-height .5s ease-out;
+  margin-top: 0;
+  max-height: 0;
+}
+
 div.section-content {
   text-align: justify;
   display: inline-flex;
-  padding: 0px 18px;
+  margin-top: 0;
+  padding-right: 55px;
+  max-width: 95%;
   max-height: 0;
   overflow: hidden;
   transition: max-height .5s ease-out;
@@ -124,37 +152,58 @@ div.section-content #minha-foto-content{
   align-items: center;
   margin: 60px;
 }
-
-#ul-skills{
-  list-style-type: none;
-  display: inline-flex;
-  padding: 0 0 0 100px;
-  margin-left: 5px;
+.table-skills {
+  width: 100%;
+  padding-left: 5%;
+  object-fit: cover;
 }
 
-#ul-skills li{
+.li-img {
+  width: 100%;
+  height: 55px;
+  object-fit: fill;
+}
+
+.skills-badges {
+  width: 100%;
+}
+
+.ul-skills{
+  list-style-type: none;
+  display: inline-flex;
+  padding: 0 0 0 0;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+.ul-skills li{
   width: 110px;
   height: 28px;
   border: 1px solid #000000;
-  margin: 20px 5px 5px 5px;
+  margin: 0 5px 5px 5px;
   padding: 5px 20px 5px 25px;
   border-radius: 5px;
 
 }
 
-li.li-img{
-  width: 5px;
-  height: 5px;
-
-}
-
-div.destaque{
+div.destaque {
   display: inline-flex;
 }
 
+footer {
+  border-top: 1px solid black;
+  text-align: center;
+  background-color: #F3F3F3;
+  padding-top: 10px;
+  padding-bottom: 0;
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
 
-
-
+footer img {
+  padding-bottom:5px;
+}
 @font-face {
   font-family: 'ibm_3270_semi-narrowmedium';
   src: url('../fonts/3270seminarrow-webfont.woff2') format('woff2'),

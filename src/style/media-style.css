@@ -1,0 +1,20 @@
+@media (max-width: 800px) {
+  body {
+    background: #600202;
+  }
+
+  .right img {
+    display: none;
+  }
+
+  div.header-menu {
+    padding-right: 5em;
+  }
+
+  div.page_header img {
+    content: url("../img/fav.png");
+    width: 1em;
+    height: 1em;
+    padding: 1em 1em;
+  }
+}

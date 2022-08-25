@@ -3,74 +3,171 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <title>Narpalan - Portfólio</title>
-  <link rel="stylesheet" href="./src/style/style.css">
   <link rel="icon" type="image/x-icon" href="./src/img/fav.png">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 <body>
-<header>
-  <div class="page_header">
+  <header>
+    <div class="page_header">
+      <img src="./src/img/header-logo.gif" alt="minha logo" class="header-logo"/>
+      <div class="header-container">
+        <ul>
+          <li onclick="dropDown('sobre')"><a href="#sobre" >About</a></li>
+          <li onclick="dropDown('skills')"><a href="#skills">Skills</a></li>
+          <li onclick="dropDown('interesses')"><a href="#interesses">Hobbies</a></li>
+          <li onclick="dropDown('sobre')"><a href="#minha-foto-content">Foto</a></li>
+        </ul>
+      </div>
+    </div>
+    <!--
     <nav>
       <div class="row">
         <div class="header-logo">
-          <img src="./src/img/header-logo.gif" alt="minha foto"/>
+
         </div>
         <div class="header-menu">
-          <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#interesses">Hobbies</a></li>
-            <li><a href="#minha-foto-content">Foto</a></li>
-          </ul>
-        </div>
 
+        </div>
       </div>
     </nav>
   </div>
-</header>
-<div class="table_of_contents">
+  -->
+  </header>
 
+<div class="table_of_contents">
   <div class="section" id="section-destaque">
     <div class="destaque">
-
     </div>
   </div>
 
-
+  <!-- About -->
   <div class="section">
-    <button class="accordion" id="sobre">About</button>
+    <button class="accordion" id="sobre" onclick="dropDown(this.id)">About</button>
     <div class="section-content" id="about">
       <div>
         <img src="./src/img/eu.jpg" alt="foto de thiago fumega" id="minha-foto-content"/>
       </div>
       <div id="text-content">
-        Olá! Bem vindo ao rascunho do meu portfólio. Sinta-se a vontade para navegar nos links que se encontram no lado
-        superior direito dessa página.
-        <p>Meu nome é <strong>Thiago Fumega Moreira Machado</strong>. Sou brasileiro, mineiro de Contagem!</p>
+        <article>
+          Olá! Bem vindo ao rascunho do meu portfólio. Sinta-se a vontade para navegar nos links que se encontram no lado
+          superior direito dessa página.
+          <p>Meu nome é <strong>Thiago Fumega Moreira Machado</strong>. Sou brasileiro, mineiro de Contagem!</p>
+        </article>
       </div>
     </div>
   </div>
 
-
+  <!-- Skills -->
   <div class="section">
-    <button class="accordion" id="skills">Skills</button>
+    <button class="accordion" id="skills" onclick="dropDown(this.id)">Skills</button>
     <div class="section-content">
-      <ul id="ul-skills">
-        <li><img class="li-img" src="https://img.shields.io/badge/MongoDB-EEEEEE?style=for-the-badge&logo=mongodb&logoColor=black
-" alt="badge mongoDB"/></li>
-        <li><img src="https://img.shields.io/badge/Linux-EEEEEE?style=for-the-badge&logo=linux&logoColor=black" alt="badge linux" class="li-img"></li>
-        <li><strong>Assembly</strong></li>
-        <li>PHP</li>
-        <li>NodeJS</li>
-        <li>TypeScript</li>
-        <li><strong>Delphi</strong></li>
-        <li>MySQL</li>
-        <li>MongoDB</li>
-      </ul>
+      <div class="skills-badges">
+        <table class="table-skills">
+          <tr>
+            <td>
+              <img
+                src="https://img.shields.io/badge/Linux-EEEEEE?style=for-the-badge&logo=linux&logoColor=black"
+                alt="badge linux"
+                class="li-img"
+              />
+            </td>
+            <td>
+              <img
+                src="https://img.shields.io/badge/windows%20server-EEEEEE?style=for-the-badge&logo=windows&logoColor=black"
+                alt="badge windows server"
+                class="li-img"
+              />
+            </td>
+            <td>
+              <!-- <img
+                src="https://img.shields.io/badge/OSX-EEEEEE?style=for-the-badge&logo=macOS&logoColor=black"
+                alt="badge macOS"
+                class="li-img"
+              /> -->
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="https://img.shields.io/badge/MongoDB-EEEEEE?style=for-the-badge&logo=mongodb&logoColor=black"
+                alt="badge mongoDB"
+                class="li-img"
+              />
+            </td>
+            <td>
+
+            </td>
+            <td>
+              <img
+                src="https://img.shields.io/badge/mysql-EEEEEE?style=for-the-badge&logo=mysql&logoColor=black"
+                alt="badge mysql"
+                class="li-img"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                src="https://img.shields.io/badge/php-EEEEEE?style=for-the-badge&logo=php&logoColor=black"
+                alt="badge php"
+                class="li-img"
+              />
+            </td>
+            <td>
+              <img
+                src="https://img.shields.io/badge/node.js-EEEEEE?style=for-the-badge&logo=node.js&logoColor=black"
+                alt="badge php"
+                class="li-img"
+              />
+            </td>
+            <td>
+              <img
+                src="https://img.shields.io/badge/typescript-EEEEEE?style=for-the-badge&logo=typescript&logoColor=black"
+                alt="badge php"
+                class="li-img"
+              />
+            </td>
+          </tr>
+        </table>
+
+        <!--
+          -----* BADGES *-----
+          php - https://img.shields.io/badge/php-EEEEEE?style=for-the-badge&logo=php&logoColor=black
+          nodejs - https://img.shields.io/badge/node.js-EEEEEE?style=for-the-badge&logo=node.js&logoColor=black
+          typescript - https://img.shields.io/badge/typescript-EEEEEE?style=for-the-badge&logo=typescript&logoColor=black
+         -->
+      </div>
+
     </div>
   </div>
-
+  <!-- Projects -->
   <div class="section">
-    <button class="accordion" id="interesses">Hobbies</button>
+    <button class="accordion" id="projects" onclick="dropDown(this.id)">Projects</button>
+    <div class="section-content">
+      <table>
+        <tr>
+          <td><img src="src/img/mochi/mochi.svg" alt=""/></td>
+          <td><img src="src/img/mochi/mochi.svg" alt=""/></td>
+          <td><img src="src/img/mochi/mochi.svg" alt=""/></td>
+        </tr>
+        <tr>
+          <td><img src="src/img/mochi/mochi.svg" alt=""/></td>
+          <td><img src="src/img/mochi/mochi.svg" alt=""/></td>
+          <td><img src="src/img/mochi/mochi.svg" alt=""/></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <!-- Professional BG -->
+  <div class="section">
+    <button class="accordion" id="professionalBG" onclick="dropDown(this.id)">Professional Background</button>
+    <div class="content">
+
+    </div>
+  </div>
+  <!-- Hobbies -->
+  <div class="section">
+    <button class="accordion" id="interesses" onclick="dropDown(this.id)">Hobbies</button>
     <div class="section-content">
       <ul style="margin-left: 15px;">
         <li><a href="https://www.mmo-champion.com/content/" target="_blank">MMO-Champion</a></li>
@@ -83,23 +180,10 @@
 
 </div>
 
+<footer><img src="./src/img/fav.png" alt="my temp logo"></footer>
 
-<script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var section = this.nextElementSibling;
-      if (section.style.maxHeight) {
-        section.style.maxHeight = null;
-      } else {
-        section.style.maxHeight = section.scrollHeight + "px";
-      }
-    });
-  }
-</script>
-
+<script type="text/javascript" src="./src/js/script.js"></script>
+<link rel="stylesheet" href="./src/style/style.css">
+<link rel="stylesheet" media="(max-width: 800px)" href="src/style/media-style.css">
 </body>
 </html>
